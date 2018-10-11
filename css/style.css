@@ -2130,3 +2130,45 @@ label {
 .post-comments-form .contacts-section-title {
 	font-size: 36px;
 }
+
+.portfolio-bg {
+	padding: 13px 23px;
+	background: #6a11cb;
+	border-radius: 30px;
+}
+.portfolio-bg button {
+	color: #ffffff;
+    padding: 0 15px;
+}
+
+.portfolio-bg button.active {
+	color: #6a11cb;
+	background-color: #fff;
+	padding: 3px 15px;
+	border-radius: 30px;
+}
+.portfolio-menu-another button {
+	background: 0;
+	border: 0;
+	padding: 0;
+	color: #666666;
+	font-weight: 400;
+	padding-left: 10px;
+	cursor: pointer;
+	position: relative;
+	margin-right: 15px;
+    transition: all .6s;
+}
+.portfolio-menu-another button:last-child {
+    margin: 0;
+}
+.portfolio-menu-another button.active::before {
+	position: absolute;
+	content: "";
+	background: #6a11cb;
+	height: 11px;
+	width: 2px;
+	top: 7px;
+	left: 0;
+    transition: all .6s;
+}
