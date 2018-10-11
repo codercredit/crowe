@@ -93,7 +93,7 @@
     // isotop
     var $grid = $('.grid').imagesLoaded(function () {
         // init Isotope
-        var $grid = $('.grid').isotope({
+        $('.grid').isotope({
             itemSelector: '.grid-item',
             percentPosition: true,
             masonry: {
@@ -101,7 +101,7 @@
                 columnWidth: '.grid-item',
             }
         });
-    });   
+    });
 
     // filter items on button click
     $('.portfolio-menu').on('click', 'button', function () {
@@ -116,6 +116,29 @@
         $(this).siblings('.active').removeClass('active');
         $(this).addClass('active');
         event.preventDefault();
+    });
+
+
+    // isotop
+    $('.box-portfolio').imagesLoaded(function () {
+        // init Isotope
+        $('.box-portfolio').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            percentPosition: true,
+            masonry: {
+                // use outer width of grid-sizer for columnWidth
+                columnWidth: '.grid-item',
+            }
+        });
+    });
+
+    // filter items on button click
+    $('.portfolio-menu-box').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
     });
 
     // testimonilas-activation
@@ -159,8 +182,8 @@
 			// settings: "unslick"
 			// instead of a settings object
 		]
-    });    
-    
+    });
+
     // testimonilas-activation
     $('.testimonilas-activation_another').slick({
         dots: true,

@@ -2076,12 +2076,12 @@ label {
 }
 
 .contacts-title-des {
-    font-size: 14px;
-    line-height: 26px;
-    color: #666666;
-    margin-top: 15px;
-    padding: 0 52px;
-    font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	color: #666666;
+	margin-top: 13px;
+	padding: 0 52px;
+	font-family: 'Work Sans', sans-serif;
 }
 
 .blog-form-2 input {
@@ -2125,4 +2125,8 @@ label {
 
 .blue-bg-gradiant:hover {
 	background-color: orange;
+}
+
+.post-comments-form .contacts-section-title {
+	font-size: 36px;
 }
