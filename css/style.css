@@ -2172,3 +2172,6 @@ label {
 	left: 0;
     transition: all .6s;
 }
+.portfolio-area .portfoliohovernone.portfolio-thumb::before {
+    background: 0;
+}
