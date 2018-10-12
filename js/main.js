@@ -227,6 +227,75 @@
 		]
     });
 
+
+    // portfolio-details-activation
+    $('.portfolio-details-activation').slick({
+        dots: false,
+        arrows: true,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><span class='left-arrow-main-slider'>←</span>prev</button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'>next<span class='right-arrow-main-slider'>→</span></button>",
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+			},
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+			},
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
+    });
+
+
+    /* brand-active */
+    $('.brand-active').owlCarousel({
+        loop: true,
+        nav: false,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            992: {
+                items: 4
+            },
+            1200: {
+                items: 5
+            }
+        }
+    })
+
     /*==================================
     	Progressbar Setup
     	====================================*/

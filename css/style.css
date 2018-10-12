@@ -932,9 +932,9 @@ label {
     font-size: 20px;
     color: #444444;
     font-weight: 500;
-    margin-top: 0px;
+    margin-top: 18px;
     margin-bottom: 0px;
-    margin-left: 11px;
+    margin-left: 0;
 }
 
 .services-para {
@@ -949,12 +949,13 @@ label {
     margin-top: 10px;
 }
 
-.read-more a {
+.services-wrapper .read-more a {
     font-size: 14px;
     font-weight: 500;
     color: #444444;
     font-family: 'Poppins', sans-serif;
-    margin-left: 20px;
+    margin-left: 0;
+    display: block;
 }
 
 .services-area_another .services-heading {
@@ -1353,12 +1354,11 @@ label {
     width: 100%;
 }
 
-.blog-title a {
+.blog-content .blog-title a {
     font-size: 18px;
-    color: #444444;
-    font-weight: 500;
     line-height: 26px;
-    transition: .3s;
+    font-weight: 500;
+    color: #444444;
 }
 
 .blog-title a:hover {
@@ -1382,16 +1382,9 @@ label {
 }
 
 /* 11. brand */
-.brand-list ul li.brand-item {
-    display: inline-block;
-}
-
-.brand-list ul li.brand-item {
-    margin-right: 80px;
-}
-
-.brand-list ul li.brand-item:last-child {
-    margin-right: 0px;
+.brand-area .owl-carousel .owl-item img {
+    display: block;
+    width: inherit;
 }
 
 /* 12. footer*/
@@ -2072,16 +2065,16 @@ label {
 }
 
 .social-icon .social-icon-list ul li a:hover {
-	color: #333;
+    color: #333;
 }
 
 .contacts-title-des {
-	font-size: 14px;
-	line-height: 26px;
-	color: #666666;
-	margin-top: 13px;
-	padding: 0 52px;
-	font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+    margin-top: 13px;
+    padding: 0 52px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .blog-form-2 input {
@@ -2116,62 +2109,182 @@ label {
 }
 
 .blue-bg-gradiant {
-	padding: 17px 33px;
-	background-image: -moz-linear-gradient(0deg, rgba(106, 17, 203, 0.8) 0%, rgb(37, 117, 252) 100%);
-	background-image: -webkit-linear-gradient(0deg, rgba(106, 17, 203, 0.8) 0%, rgb(37, 117, 252) 100%);
-	background-image: -ms-linear-gradient(0deg, rgba(106, 17, 203, 0.8) 0%, rgb(37, 117, 252) 100%);
-	letter-spacing: 0;
+    padding: 17px 33px;
+    background-image: -moz-linear-gradient(0deg, rgba(106, 17, 203, 0.8) 0%, rgb(37, 117, 252) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgba(106, 17, 203, 0.8) 0%, rgb(37, 117, 252) 100%);
+    background-image: -ms-linear-gradient(0deg, rgba(106, 17, 203, 0.8) 0%, rgb(37, 117, 252) 100%);
+    letter-spacing: 0;
 }
 
 .blue-bg-gradiant:hover {
-	background-color: orange;
+    background-color: orange;
 }
 
 .post-comments-form .contacts-section-title {
-	font-size: 36px;
+    font-size: 36px;
 }
 
 .portfolio-bg {
-	padding: 13px 23px;
-	background: #6a11cb;
-	border-radius: 30px;
+    padding: 13px 23px;
+    background: #6a11cb;
+    border-radius: 30px;
 }
+
 .portfolio-bg button {
-	color: #ffffff;
+    color: #ffffff;
     padding: 0 15px;
 }
 
 .portfolio-bg button.active {
-	color: #6a11cb;
-	background-color: #fff;
-	padding: 3px 15px;
-	border-radius: 30px;
+    color: #6a11cb;
+    background-color: #fff;
+    padding: 3px 15px;
+    border-radius: 30px;
 }
+
 .portfolio-menu-another button {
-	background: 0;
-	border: 0;
-	padding: 0;
-	color: #666666;
-	font-weight: 400;
-	padding-left: 10px;
-	cursor: pointer;
-	position: relative;
-	margin-right: 15px;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: #666666;
+    font-weight: 400;
+    padding-left: 10px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 15px;
     transition: all .6s;
 }
+
 .portfolio-menu-another button:last-child {
     margin: 0;
 }
+
 .portfolio-menu-another button.active::before {
-	position: absolute;
-	content: "";
-	background: #6a11cb;
-	height: 11px;
-	width: 2px;
-	top: 7px;
-	left: 0;
+    position: absolute;
+    content: "";
+    background: #6a11cb;
+    height: 11px;
+    width: 2px;
+    top: 7px;
+    left: 0;
     transition: all .6s;
 }
+
 .portfolio-area .portfoliohovernone.portfolio-thumb::before {
     background: 0;
+}
+
+.portfolio-details-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.portfolio-details-content p {
+    line-height: 26px;
+    color: #666666;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.poro-deta-info {
+    padding: 50px;
+    border: 10px solid #6a11cb;
+}
+
+.single-poro-info h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+}
+
+.single-poro-info h1 span {
+    display: block;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 6px;
+}
+
+.poro-social ul li a {
+    font-size: 14px;
+    color: #777777;
+}
+
+.poro-social ul li {
+    display: inline-block;
+    margin-right: 9px;
+}
+
+.portfolio-details-activation .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    background: 0;
+    border: 0;
+    font-size: 16px;
+    color: #444444;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0;
+}
+
+.portfolio-details-activation .slick-next.pull-right.slick-arrow {
+    right: 0;
+}
+
+.portfolio-details-content {
+    margin-bottom: 68px;
+}
+
+.portfolio-details-activation .slick-prev.pull-left.slick-arrow {
+    left: 0;
+    z-index: 999;
+}
+
+.box-portfolio .portfolio-thumb::before {
+    position: absolute;
+    content: "";
+    background: #000046;
+    height: 85%;
+    width: 85%;
+    transition: .5s;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.box-portfolio .portfolio-wrapper:hover .portfolio-thumb::before {
+    opacity: .85;
+    z-index: 1;
+    visibility: visible;
+}
+
+.box-portfolio .portfolio-content {
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    color: #fff;
+    opacity: 0;
+    transition: .4s;
+    visibility: hidden;
+    left: 0;
+    margin: auto;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.box-portfolio .portfolio-content h3 {
+    color: #fff;
+    font-size: 21px;
+    margin: 0;
+    font-weight: 400;
 }
