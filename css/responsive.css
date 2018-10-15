@@ -109,9 +109,14 @@
         margin-right: 44px;
     }
 
+    .portfolio-details-title {
+        font-size: 26px;
+    }
+
     .footer-para {
         padding-right: 5px;
     }
+
 
 
 
@@ -233,6 +238,10 @@
 
     .portfolio-menu {
         text-align: center !important;
+    }
+
+    .poro-deta-info {
+        margin-bottom: 60px;
     }
 
     .video-bg {
@@ -442,8 +451,24 @@
         text-align: center !important;
     }
 
+
     .portfolio-menu button {
         padding-left: 18px;
+    }
+
+    .portfolio-bg {
+        padding-top: 20px;
+    }
+
+    .portfolio-bg button {
+        padding-left: 18px;
+        margin-bottom: 10px;
+        transition: .3s;
+    }
+
+    .portfolio-inner {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .services-para {
@@ -481,6 +506,11 @@
     .brand-list ul li.brand-item {
         margin-right: 19px;
         margin-left: 19px;
+    }
+
+    .business-area {
+        padding-top: 204px;
+        padding-bottom: 192px;
     }
 
 
